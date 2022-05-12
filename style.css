@@ -1,0 +1,63 @@
+html {
+  font-size: 10px;
+  background: url("./background.jpg") bottom center;
+  background-size: cover;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.key {
+  width: 10rem;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 0.5rem black;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.07s ease;
+}
+
+.playing {
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+  transform: scale(1.1);
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
+
+@media (max-width: 425px) {
+  .key {
+    width: 5rem;
+  }
+
+  .sound {
+    font-size: 1rem;
+  }
+}
